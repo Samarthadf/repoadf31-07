@@ -173,12 +173,6 @@
 									"dependencyConditions": [
 										"Succeeded"
 									]
-								},
-								{
-									"activity": "Set variable4",
-									"dependencyConditions": [
-										"Succeeded"
-									]
 								}
 							],
 							"policy": {
