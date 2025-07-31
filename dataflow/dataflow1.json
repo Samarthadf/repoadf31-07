@@ -5,10 +5,6 @@
 		"typeProperties": {
 			"sources": [
 				{
-					"linkedService": {
-						"referenceName": "ls_blob_str",
-						"type": "LinkedServiceReference"
-					},
 					"name": "source"
 				}
 			],
@@ -44,17 +40,8 @@
 				"          Category as string,",
 				"          Status as string",
 				"     ),",
-				"     useSchema: false,",
 				"     allowSchemaDrift: true,",
-				"     validateSchema: false,",
-				"     ignoreNoFilesFound: false,",
-				"     format: 'delimited',",
-				"     container: 'input',",
-				"     fileName: 'combined_customer_data.csv',",
-				"     columnDelimiter: ',',",
-				"     escapeChar: '\\\\',",
-				"     quoteChar: '\\\"',",
-				"     columnNamesAsHeader: true) ~> source",
+				"     validateSchema: false) ~> source",
 				"source split(!isNull(CustomerAccNo)  && length(toString(CustomerAccNo)) >= 8 && length(toString(CustomerAccNo)) <= 12 && !isNull(CustName) && length(CustName) < 50 && !isNull(Amount) && isFloat(toString(Amount)) && round(Amount, 2) == Amount && (Category == 'Premium' || Category == 'Platinum' || Category == 'Diamond' || Category == 'Gold'),",
 				"     disjoint: false) ~> split1@(Valid, Invalid)",
 				"split1@Valid select(mapColumn(",
