@@ -8,6 +8,18 @@
 		"ls_blob_str_connectionString": {
 			"value": ""
 		},
+		"AzureSqlDatabase1_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "server1service.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "master"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "samarth"
+		},
 		"containerUri": {
 			"value": ""
 		},
