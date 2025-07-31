@@ -1,0 +1,9 @@
+{
+	"name": "adfsamarthpractices",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "6d42f66e-501f-4e57-b01c-f76567539c87",
+		"tenantId": "84f1e4ea-8554-43e1-8709-f0b8589ea118"
+	}
+}
