@@ -161,7 +161,10 @@
 				"userProperties": [],
 				"typeProperties": {
 					"variableName": "Failure reason",
-					"value": ""
+					"value": {
+						"value": "@activity('dataflow1').error.message",
+						"type": "Expression"
+					}
 				}
 			}
 		],
